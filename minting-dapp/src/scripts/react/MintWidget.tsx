@@ -156,7 +156,7 @@ export default class MintWidget extends React.Component<Props, State> {
               <strong></strong> {utils.formatEther(this.props.tokenPrice.mul(this.state.mintAmount))} ETH 
           </div>*/}
           {this.props.totalSupply}/{this.props.maxSupply}
-          <a className="ethlink" href="https://etherscan.io/address/0xa35346ef08F731AF6E7D3d1F5B948c1De0AEcc8C#code" target="_blank">0xa35346ef08F731AF6E7D3d1F5B948c1De0AEcc8C</a>
+          <a className="ethlink" href="https://etherscan.io/address/0x309A87034A81E555585Fa0a3F541205992Ad7ec2#code" target="_blank">0x309A87034A81E555585Fa0a3F541205992Ad7ec2</a>
           <div className="maxmint">6 Max</div>
 
             <div className="main__controls">
@@ -186,6 +186,7 @@ export default class MintWidget extends React.Component<Props, State> {
           <div className="main__team--box">
             <div className="main__team--name">
               <p>Brian</p>
+              <p>Artist</p>
             </div>
             <figure>
               <img src="/build/images/18.png"/>
@@ -194,6 +195,7 @@ export default class MintWidget extends React.Component<Props, State> {
           <div className="main__team--box">
             <div className="main__team--name">
               <p>Joon</p>
+              <p>Engineer</p>
             </div>
             <figure>
               <img src="/build/images/177.png"/>
@@ -202,6 +204,7 @@ export default class MintWidget extends React.Component<Props, State> {
           <div className="main__team--box">
             <div className="main__team--name">
               <p>Ryung</p>
+              <p>Community</p>
             </div>
             <figure>
               <img src="/build/images/94.png"/>

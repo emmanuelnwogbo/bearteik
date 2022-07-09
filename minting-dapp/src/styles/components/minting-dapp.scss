@@ -171,6 +171,8 @@
     font-size: #{scaleValue(25)};
     margin-top: #{scaleValue(30)};
 
+    text-align: center;
+
     @media only screen and (max-width: 414px) {
       font-size: #{scaleValue(90)};
       padding: #{scaleValue(50)} #{scaleValue(80)};
@@ -375,9 +377,25 @@
       font-size: #{scaleValue(30)};
       margin-bottom: #{scaleValue(20)};
 
+      & p {
+
+        &:nth-child(2) {
+          font-size: #{scaleValue(15)};
+          font-weight: 300;
+        }
+      }
+
       @media only screen and (max-width: 414px) {
         font-size: #{scaleValue(90)};
         margin-bottom: #{scaleValue(50)};
+
+        & p {
+
+          &:nth-child(2) {
+            font-size: #{scaleValue(50)};
+            font-weight: 300;
+          }
+        }
       }
     }
     
