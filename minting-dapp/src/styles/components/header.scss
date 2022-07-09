@@ -17,7 +17,9 @@
    padding-left: #{scaleValue(49)};
 
     @media only screen and (max-width: 414px) {
-      transform: translateY(#{scaleValue(250)});
+      font-size: #{scaleValue(120)};
+      padding-left: #{scaleValue(100)};
+      padding-top: #{scaleValue(170)};
     }
   }
 
@@ -50,6 +52,10 @@
       align-items: center;
       padding-right: #{scaleValue(90)};
 
+      @media only screen and (max-width: 414px) {
+        //width: #{scaleValue(600)};
+      }
+      
       & span {
         cursor: pointer;
 
@@ -59,6 +65,10 @@
           text-decoration: underline;
           color: #000000;
           opacity: .8;
+
+          @media only screen and (max-width: 414px) {
+            font-size: #{scaleValue(65)};
+          }
         }
 
         & svg {
@@ -66,8 +76,8 @@
           width: #{scaleValue(50)};
 
           @media only screen and (max-width: 414px) {
-            height: #{scaleValue(200)};
-            width: #{scaleValue(200)};
+            height: #{scaleValue(150)};
+            width: #{scaleValue(150)};
           }
         }
 

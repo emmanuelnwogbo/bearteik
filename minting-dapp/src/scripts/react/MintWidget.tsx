@@ -135,9 +135,7 @@ export default class MintWidget extends React.Component<Props, State> {
     return (
       <>
         <Header />
-        <div className="main__top" style={{
-          backgroundImage: `url('/build/images/1.png')`
-        }}>
+        <div className="main__top">
           <div className="main__top--photos">
             <figure>
               <img src="/build/images/37.png"/>
@@ -147,6 +145,11 @@ export default class MintWidget extends React.Component<Props, State> {
             </figure>
           </div>
 
+          <div className="main__para">
+            <p>A community driven brand that exists on the metaverse. 2600 Teiko warriors ready to Teiko web3.
+              One of a kind art with a team ready to build....</p>
+          </div>
+
           {this.canMint() ?
           <div className="main">
             {/*<div className="main__price">
@@ -154,7 +157,7 @@ export default class MintWidget extends React.Component<Props, State> {
           </div>*/}
           {this.props.totalSupply}/{this.props.maxSupply}
           <a className="ethlink" href="https://etherscan.io/address/0xa35346ef08F731AF6E7D3d1F5B948c1De0AEcc8C#code" target="_blank">0xa35346ef08F731AF6E7D3d1F5B948c1De0AEcc8C</a>
-          <div className="maxmint">3 Max</div>
+          <div className="maxmint">6 Max</div>
 
             <div className="main__controls">
               <div className="main__controls--toggle">

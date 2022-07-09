@@ -164,6 +164,20 @@
     }
   }
 
+  &__para {
+    color: #fff;
+    width: 100vw;
+    padding: #{scaleValue(20)} #{scaleValue(310)};
+    font-size: #{scaleValue(25)};
+    margin-top: #{scaleValue(30)};
+
+    @media only screen and (max-width: 414px) {
+      font-size: #{scaleValue(90)};
+      padding: #{scaleValue(50)} #{scaleValue(80)};
+      margin-top: #{scaleValue(30)};
+    }
+  }
+
   &__bottom {
     position: relative;
     padding: 0 #{scaleValue(90)};
@@ -329,6 +343,10 @@
       font-size: #{scaleValue(40)};
       margin-bottom: #{scaleValue(50)};
       letter-spacing: #{scaleValue(5)};
+
+      @media only screen and (max-width: 414px) {
+        font-size: #{scaleValue(130)};
+      }
     }
   }
 
@@ -337,21 +355,41 @@
     background: rgb(132, 13, 22);
     justify-content: center;
 
+    @media only screen and (max-width: 414px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     &--box {
       display: flex;
       flex-direction: column;
       margin: 0 #{scaleValue(20)};
+
+      @media only screen and (max-width: 414px) {
+        margin-bottom: #{scaleValue(170)};
+      }
     }
 
     &--name {
       color: #fff;
       font-size: #{scaleValue(30)};
       margin-bottom: #{scaleValue(20)};
+
+      @media only screen and (max-width: 414px) {
+        font-size: #{scaleValue(90)};
+        margin-bottom: #{scaleValue(50)};
+      }
     }
     
     & figure {
       width: #{scaleValue(300)};
       height: #{scaleValue(300)};
+
+      @media only screen and (max-width: 414px) {
+        width: #{scaleValue(1000)};
+        height: #{scaleValue(1000)};
+        display: block !important;
+      }
 
       & img {
         object-fit: cover;
